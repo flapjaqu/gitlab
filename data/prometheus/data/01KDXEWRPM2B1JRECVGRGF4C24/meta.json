@@ -1,0 +1,18 @@
+{
+	"ulid": "01KDXEWRPM2B1JRECVGRGF4C24",
+	"minTime": 1767283200000,
+	"maxTime": 1767290400000,
+	"stats": {
+		"numSamples": 8325021,
+		"numFloatSamples": 8325021,
+		"numSeries": 38244,
+		"numChunks": 38437
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KDXEWRPM2B1JRECVGRGF4C24"
+		]
+	},
+	"version": 1
+}
