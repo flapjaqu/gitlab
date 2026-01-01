@@ -20,3 +20,16 @@
 2026-01-01_13:46:16.80053 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
 2026-01-01_13:46:16.80055 FATAL:  Peer authentication failed for user "gitlab"
 2026-01-01_13:46:16.80055 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2026-01-01_15:47:32.82898 LOG:  duration: 1034.347 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2026-01-01_15:47:32.84673 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2026-01-01_15:47:32.84676 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2026-01-01_15:47:32.84676 	       attidentity AS identity,
+2026-01-01_15:47:32.84677 	       attgenerated as attgenerated
+2026-01-01_15:47:32.84677 	  FROM pg_attribute a
+2026-01-01_15:47:32.84677 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2026-01-01_15:47:32.84678 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2026-01-01_15:47:32.84678 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2026-01-01_15:47:32.84679 	 WHERE a.attrelid = '"application_settings"'::regclass
+2026-01-01_15:47:32.84679 	   AND a.attnum > 0 AND NOT a.attisdropped
+2026-01-01_15:47:32.84679 	 ORDER BY a.attnum
+2026-01-01_15:47:32.84680 	

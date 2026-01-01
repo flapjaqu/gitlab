@@ -87,3 +87,11 @@
 {"severity":"INFO","time":"2026-01-01T15:41:00.470Z","gitlab_throttle_user_allowlist":[]}
 {"severity":"INFO","time":"2026-01-01T15:42:35.414Z","gitlab_throttle_user_allowlist":[]}
 {"severity":"INFO","time":"2026-01-01T15:44:10.278Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:45:53.558Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:47:39.313Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:50:00.740Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:51:47.059Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:53:29.654Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:55:08.348Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:56:38.973Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-01-01T15:58:52.600Z","gitlab_throttle_user_allowlist":[]}
