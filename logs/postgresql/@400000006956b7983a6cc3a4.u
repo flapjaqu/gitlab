@@ -1,0 +1,19 @@
+2026-01-01_16:54:30.35604 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-01-01_16:54:30.40373 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2026-01-01_16:54:30.68874 LOG:  database system was interrupted; last known up at 2026-01-01 15:06:14 GMT
+2026-01-01_16:54:31.25314 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-01-01_16:54:31.26339 LOG:  invalid record length at 0/A171D30: expected at least 24, got 0
+2026-01-01_16:54:31.26341 LOG:  redo is not required
+2026-01-01_16:54:31.41201 LOG:  database system is ready to accept connections
+2026-01-01_16:54:47.28952 LOG:  duration: 3162.851 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2026-01-01_16:54:47.28955 	       relname as relname,
+2026-01-01_16:54:47.28956 	       pg_total_relation_size(oid) bytes
+2026-01-01_16:54:47.28956 	  FROM pg_class
+2026-01-01_16:54:47.28956 	 WHERE relkind = 'r';
+2026-01-01_16:54:47.28957 	
+2026-01-01_17:14:44.58442 LOG:  duration: 1554.310 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2026-01-01_17:14:44.60303 	       relname as relname,
+2026-01-01_17:14:44.60305 	       pg_total_relation_size(oid) bytes
+2026-01-01_17:14:44.60305 	  FROM pg_class
+2026-01-01_17:14:44.60306 	 WHERE relkind = 'r';
+2026-01-01_17:14:44.60306 	

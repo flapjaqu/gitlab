@@ -1,3 +1,3 @@
-2026-01-01_16:54:31.30028 time="2026-01-01T16:54:31Z" level=info msg="Redis Metrics Exporter 1.79.0    build date:     sha1:     Go: go1.24.5    GOOS: linux    GOARCH: amd64"
-2026-01-01_16:54:31.30036 time="2026-01-01T16:54:31Z" level=info msg="Setting log level to \"info\""
-2026-01-01_16:54:31.31918 time="2026-01-01T16:54:31Z" level=info msg="Providing metrics at localhost:9121/metrics"
+2026-01-01_18:06:07.09074 time="2026-01-01T18:06:07Z" level=info msg="Redis Metrics Exporter 1.79.0    build date:     sha1:     Go: go1.24.5    GOOS: linux    GOARCH: amd64"
+2026-01-01_18:06:07.09080 time="2026-01-01T18:06:07Z" level=info msg="Setting log level to \"info\""
+2026-01-01_18:06:07.10959 time="2026-01-01T18:06:07Z" level=info msg="Providing metrics at localhost:9121/metrics"

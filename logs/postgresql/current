@@ -1,19 +1,29 @@
-2026-01-01_16:54:30.35604 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
-2026-01-01_16:54:30.40373 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
-2026-01-01_16:54:30.68874 LOG:  database system was interrupted; last known up at 2026-01-01 15:06:14 GMT
-2026-01-01_16:54:31.25314 LOG:  database system was not properly shut down; automatic recovery in progress
-2026-01-01_16:54:31.26339 LOG:  invalid record length at 0/A171D30: expected at least 24, got 0
-2026-01-01_16:54:31.26341 LOG:  redo is not required
-2026-01-01_16:54:31.41201 LOG:  database system is ready to accept connections
-2026-01-01_16:54:47.28952 LOG:  duration: 3162.851 ms  statement: SELECT relnamespace::regnamespace as schemaname,
-2026-01-01_16:54:47.28955 	       relname as relname,
-2026-01-01_16:54:47.28956 	       pg_total_relation_size(oid) bytes
-2026-01-01_16:54:47.28956 	  FROM pg_class
-2026-01-01_16:54:47.28956 	 WHERE relkind = 'r';
-2026-01-01_16:54:47.28957 	
-2026-01-01_17:14:44.58442 LOG:  duration: 1554.310 ms  statement: SELECT relnamespace::regnamespace as schemaname,
-2026-01-01_17:14:44.60303 	       relname as relname,
-2026-01-01_17:14:44.60305 	       pg_total_relation_size(oid) bytes
-2026-01-01_17:14:44.60305 	  FROM pg_class
-2026-01-01_17:14:44.60306 	 WHERE relkind = 'r';
-2026-01-01_17:14:44.60306 	
+2026-01-01_18:06:07.32718 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-01-01_18:06:07.46172 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2026-01-01_18:06:07.49497 LOG:  database system was interrupted; last known up at 2026-01-01 16:54:31 GMT
+2026-01-01_18:06:08.22247 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-01-01_18:06:08.36208 LOG:  invalid record length at 0/A171DA8: expected at least 24, got 0
+2026-01-01_18:06:08.36209 LOG:  redo is not required
+2026-01-01_18:06:08.47588 LOG:  database system is ready to accept connections
+2026-01-01_18:06:18.78036 LOG:  duration: 1311.884 ms  statement: 				SELECT t.oid, t.typname, t.typelem, t.typdelim, ti.proname AS typinput
+2026-01-01_18:06:18.78038 					FROM pg_type as t
+2026-01-01_18:06:18.78039 					JOIN pg_proc as ti ON ti.oid = t.typinput
+2026-01-01_18:06:18.78039 	
+2026-01-01_18:06:21.06992 LOG:  duration: 1997.160 ms  statement: SELECT
+2026-01-01_18:06:21.06994 	  projects.namespace_id,
+2026-01-01_18:06:21.06995 	  p_ci_builds.status,
+2026-01-01_18:06:21.06995 	  projects.shared_runners_enabled,
+2026-01-01_18:06:21.06995 	  COUNT(*) AS count
+2026-01-01_18:06:21.06995 	FROM p_ci_builds
+2026-01-01_18:06:21.06996 	JOIN projects
+2026-01-01_18:06:21.06996 	  ON projects.id = p_ci_builds.project_id
+2026-01-01_18:06:21.06996 	WHERE p_ci_builds.type = 'Ci::Build'
+2026-01-01_18:06:21.06996 	  AND p_ci_builds.status = 'created'
+2026-01-01_18:06:21.06997 	  -- The created_at filter has been introduced for performance reasons only
+2026-01-01_18:06:21.06997 	  AND p_ci_builds.created_at > NOW() - INTERVAL '7 days'
+2026-01-01_18:06:21.06997 	  AND projects.pending_delete = 'f'
+2026-01-01_18:06:21.06997 	GROUP BY
+2026-01-01_18:06:21.06998 	  projects.namespace_id,
+2026-01-01_18:06:21.06998 	  p_ci_builds.status,
+2026-01-01_18:06:21.06998 	  projects.shared_runners_enabled
+2026-01-01_18:06:21.06998 	
