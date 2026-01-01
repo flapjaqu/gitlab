@@ -2,8 +2,8 @@ logrotate state -- version 2
 "/var/log/gitlab/nginx/gitlab_error.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/auth.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/active_context.log" 2026-1-1-13:0:0
-"/var/log/gitlab/gitlab-rails/service_measurement.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/database_load_balancing.log" 2026-1-1-13:0:0
+"/var/log/gitlab/gitlab-rails/service_measurement.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/user_experience_slis.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/gitlab-rails-db-migrate-2026-01-01-13-46-17.log" 2026-1-1-13:0:0
 "/var/log/gitlab/nginx/error.log" 2026-1-1-13:0:0
@@ -14,12 +14,12 @@ logrotate state -- version 2
 "/var/log/gitlab/gitlab-rails/api_json.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/grpc.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/sidekiq_client.log" 2026-1-1-13:0:0
-"/var/log/gitlab/gitlab-rails/application_json.log" 2026-1-1-13:0:0
 "/var/log/gitlab/nginx/gitlab_access.log" 2026-1-1-13:0:0
-"/var/log/gitlab/mailroom/*.log" 2026-1-1-13:0:0
+"/var/log/gitlab/gitlab-rails/application_json.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-pages/*.log" 2026-1-1-13:0:0
-"/var/log/gitlab/gitlab-kas/*.log" 2026-1-1-13:0:0
+"/var/log/gitlab/mailroom/*.log" 2026-1-1-13:0:0
 "/var/log/gitlab/puma/*.log" 2026-1-1-13:0:0
+"/var/log/gitlab/gitlab-kas/*.log" 2026-1-1-13:0:0
 "/var/log/gitlab/nginx/access.log" 2026-1-1-13:0:0
-"/var/log/gitlab/gitlab-shell/*.log" 2026-1-1-13:0:0
 "/var/log/gitlab/gitlab-rails/production.log" 2026-1-1-13:0:0
+"/var/log/gitlab/gitlab-shell/*.log" 2026-1-1-13:0:0
