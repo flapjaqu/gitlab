@@ -1,0 +1,26 @@
+2026-01-01_13:43:30.23162 505:C 01 Jan 2026 13:43:30.231 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2026-01-01_13:43:30.23170 505:C 01 Jan 2026 13:43:30.231 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2026-01-01_13:43:30.23170 505:C 01 Jan 2026 13:43:30.231 * Redis version=7.2.11, bits=64, commit=d4c381df, modified=0, pid=505, just started
+2026-01-01_13:43:30.23170 505:C 01 Jan 2026 13:43:30.231 * Configuration loaded
+2026-01-01_13:43:30.23197 505:M 01 Jan 2026 13:43:30.231 * monotonic clock: POSIX clock_gettime
+2026-01-01_13:43:30.23337 505:M 01 Jan 2026 13:43:30.233 # Failed to write PID file: Permission denied
+2026-01-01_13:43:30.23337                 _._                                                  
+2026-01-01_13:43:30.23338            _.-``__ ''-._                                             
+2026-01-01_13:43:30.23338       _.-``    `.  `_.  ''-._           Redis 7.2.11 (d4c381df/0) 64 bit
+2026-01-01_13:43:30.23338   .-`` .-```.  ```\/    _.,_ ''-._                                  
+2026-01-01_13:43:30.23338  (    '      ,       .-`  | `,    )     Running in standalone mode
+2026-01-01_13:43:30.23338  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 0
+2026-01-01_13:43:30.23339  |    `-._   `._    /     _.-'    |     PID: 505
+2026-01-01_13:43:30.23339   `-._    `-._  `-./  _.-'    _.-'                                   
+2026-01-01_13:43:30.23339  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2026-01-01_13:43:30.23339  |    `-._`-._        _.-'_.-'    |           https://redis.io       
+2026-01-01_13:43:30.23339   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2026-01-01_13:43:30.23340  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2026-01-01_13:43:30.23340  |    `-._`-._        _.-'_.-'    |                                  
+2026-01-01_13:43:30.23340   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2026-01-01_13:43:30.23340       `-._    `-.__.-'    _.-'                                       
+2026-01-01_13:43:30.23342           `-._        _.-'                                           
+2026-01-01_13:43:30.23342               `-.__.-'                                               
+2026-01-01_13:43:30.23342 
+2026-01-01_13:43:30.23447 505:M 01 Jan 2026 13:43:30.234 * Server initialized
+2026-01-01_13:43:30.23571 505:M 01 Jan 2026 13:43:30.235 * Ready to accept connections unix

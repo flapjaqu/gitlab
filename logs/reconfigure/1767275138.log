@@ -1,0 +1,268 @@
+# Logfile created on 2026-01-01 13:45:38 +0000 by logger.rb/v1.7.0
+[2026-01-01T13:45:38+00:00] INFO: Started Cinc Zero at chefzero://localhost:1 with repository at /opt/gitlab/embedded (One version per cookbook)
+[2026-01-01T13:45:38+00:00] INFO: *** Cinc Client 18.3.0 ***
+[2026-01-01T13:45:38+00:00] INFO: Platform: x86_64-linux
+[2026-01-01T13:45:38+00:00] INFO: Cinc-client pid: 37
+[2026-01-01T13:45:39+00:00] INFO: Setting the run_list to ["recipe[gitlab-base]"] from CLI options
+[2026-01-01T13:45:39+00:00] INFO: Run List is [recipe[gitlab-base]]
+[2026-01-01T13:45:39+00:00] INFO: Run List expands to [gitlab-base]
+[2026-01-01T13:45:39+00:00] INFO: Starting Cinc Client Run for localhost
+[2026-01-01T13:45:39+00:00] INFO: Running start handlers
+[2026-01-01T13:45:39+00:00] INFO: Start handlers complete.
+[2026-01-01T13:45:41+00:00] INFO: Loading cookbooks [gitlab-base@0.1.0, package@0.1.0, gitlab@0.0.1, runit@5.1.7, logrotate@0.1.0, postgresql@0.1.0, redis@0.1.0, monitoring@0.1.0, registry@0.1.0, mattermost@0.1.0, consul@0.1.0, gitaly@0.1.0, praefect@0.1.0, gitlab-kas@0.1.0, gitlab-pages@0.1.0, letsencrypt@0.1.0, nginx@0.1.0, acme@4.1.8, crond@0.1.0]
+[2026-01-01T13:45:43+00:00] INFO: Generating default secrets
+[2026-01-01T13:45:44+00:00] INFO: Generating /etc/gitlab/gitlab-secrets.json file
+[2026-01-01T13:45:44+00:00] WARN: gitlab-rails does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] INFO: Skipped selecting an init system because it was explicitly disabled
+[2026-01-01T13:45:44+00:00] WARN: gitlab-shell does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-sshd does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: logrotate does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: logrotate does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: puma does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-rails does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-shell does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-workhorse does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-pages does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-kas does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitaly does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: mailroom does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitaly does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: postgresql does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: postgresql does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-kas does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: puma does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: sidekiq does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-workhorse does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: gitlab-exporter does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: redis-exporter does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: prometheus does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: alertmanager does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:44+00:00] WARN: postgres-exporter does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:46+00:00] WARN: only_if block for templatesymlink[Create a gitlab_pages_secret and create a symlink to Rails root] returned a string, did you mean to run a command?
+[2026-01-01T13:45:46+00:00] WARN: only_if block for templatesymlink[Create a gitlab_kas_secret and create a symlink to Rails root] returned a string, did you mean to run a command?
+[2026-01-01T13:45:47+00:00] INFO: link[/opt/gitlab/service/logrotate] created
+[2026-01-01T13:45:48+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start logrotate], 19 attempts left
+[2026-01-01T13:45:52+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start logrotate] ran successfully
+[2026-01-01T13:45:52+00:00] WARN: redis does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:45:52+00:00] INFO: link[/opt/gitlab/service/redis] created
+[2026-01-01T13:45:53+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start redis], 19 attempts left
+[2026-01-01T13:45:57+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start redis] ran successfully
+[2026-01-01T13:45:57+00:00] INFO: link[/opt/gitlab/service/gitaly] created
+[2026-01-01T13:45:59+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start gitaly], 19 attempts left
+[2026-01-01T13:46:03+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start gitaly] ran successfully
+[2026-01-01T13:46:06+00:00] INFO: link[/opt/gitlab/service/postgresql] created
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] owner changed to 996
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] group changed to 996
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/supervise/status] updated atime and mtime to 2026-01-01 13:46:06 +0000
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] owner changed to 996
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] group changed to 996
+[2026-01-01T13:46:06+00:00] INFO: file[/opt/gitlab/service/postgresql/log/supervise/status] updated atime and mtime to 2026-01-01 13:46:06 +0000
+[2026-01-01T13:46:07+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start postgresql], 19 attempts left
+[2026-01-01T13:46:10+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start postgresql] ran successfully
+[2026-01-01T13:46:17+00:00] INFO: link[/opt/gitlab/service/gitlab-kas] created
+[2026-01-01T13:46:17+00:00] WARN: gitlab-rails does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:46:54+00:00] INFO: bash_hide_env[migrate gitlab-rails database] ran successfully
+[2026-01-01T13:46:54+00:00] INFO: rails_migration[gitlab-rails] sending run action to execute[clear the gitlab-rails cache] (immediate)
+[2026-01-01T13:47:28+00:00] INFO: execute[clear the gitlab-rails cache] ran successfully
+[2026-01-01T13:47:28+00:00] INFO: rails_migration[gitlab-rails] sending run action to ruby_block[check remote PG version] (immediate)
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/log/gitlab/puma] created directory /var/log/gitlab/puma
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/log/gitlab/puma] owner changed to 998
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/log/gitlab/puma] mode changed to 700
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/opt/gitlab/gitlab-rails/sockets] created directory /var/opt/gitlab/gitlab-rails/sockets
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/opt/gitlab/gitlab-rails/sockets] owner changed to 998
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/opt/gitlab/gitlab-rails/sockets] group changed to 999
+[2026-01-01T13:47:28+00:00] INFO: directory[/var/opt/gitlab/gitlab-rails/sockets] mode changed to 750
+[2026-01-01T13:47:28+00:00] INFO: template[/var/opt/gitlab/gitlab-rails/etc/puma.rb] created file /var/opt/gitlab/gitlab-rails/etc/puma.rb
+[2026-01-01T13:47:28+00:00] INFO: template[/var/opt/gitlab/gitlab-rails/etc/puma.rb] updated file contents /var/opt/gitlab/gitlab-rails/etc/puma.rb
+[2026-01-01T13:47:28+00:00] INFO: template[/var/opt/gitlab/gitlab-rails/etc/puma.rb] owner changed to 0
+[2026-01-01T13:47:28+00:00] INFO: template[/var/opt/gitlab/gitlab-rails/etc/puma.rb] group changed to 0
+[2026-01-01T13:47:28+00:00] INFO: template[/var/opt/gitlab/gitlab-rails/etc/puma.rb] mode changed to 644
+[2026-01-01T13:47:28+00:00] INFO: link[/var/log/gitlab/puma/config] created
+[2026-01-01T13:47:28+00:00] INFO: link[/opt/gitlab/service/puma] created
+[2026-01-01T13:47:29+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start puma], 19 attempts left
+[2026-01-01T13:47:33+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start puma] ran successfully
+[2026-01-01T13:47:33+00:00] WARN: sidekiq does not have a log_group or default logdir mode defined. Setting to 0700.
+[2026-01-01T13:47:33+00:00] INFO: directory[/var/log/gitlab/sidekiq] created directory /var/log/gitlab/sidekiq
+[2026-01-01T13:47:33+00:00] INFO: directory[/var/log/gitlab/sidekiq] owner changed to 998
+[2026-01-01T13:47:33+00:00] INFO: directory[/var/log/gitlab/sidekiq] mode changed to 700
+[2026-01-01T13:47:33+00:00] INFO: link[/var/log/gitlab/sidekiq/config] created
+[2026-01-01T13:47:33+00:00] INFO: link[/opt/gitlab/service/sidekiq] created
+[2026-01-01T13:47:34+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start sidekiq], 19 attempts left
+[2026-01-01T13:47:37+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start sidekiq] ran successfully
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse] created directory /var/opt/gitlab/gitlab-workhorse
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse] owner changed to 998
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse/sockets] created directory /var/opt/gitlab/gitlab-workhorse/sockets
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse/sockets] owner changed to 998
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse/sockets] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse/sockets] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/gitlab-workhorse] created directory /var/log/gitlab/gitlab-workhorse
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/gitlab-workhorse] owner changed to 998
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/gitlab-workhorse] mode changed to 700
+[2026-01-01T13:47:37+00:00] INFO: link[/var/log/gitlab/gitlab-workhorse/config] created
+[2026-01-01T13:47:37+00:00] INFO: link[/opt/gitlab/service/gitlab-workhorse] created
+[2026-01-01T13:47:37+00:00] INFO: file[/var/opt/gitlab/gitlab-workhorse/VERSION] created file /var/opt/gitlab/gitlab-workhorse/VERSION
+[2026-01-01T13:47:37+00:00] INFO: file[/var/opt/gitlab/gitlab-workhorse/VERSION] updated file contents /var/opt/gitlab/gitlab-workhorse/VERSION
+[2026-01-01T13:47:37+00:00] INFO: version_file[Create version file for Workhorse] not queuing delayed action restart on runit_service[gitlab-workhorse] (delayed), as it's already been queued
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] created file /var/opt/gitlab/gitlab-workhorse/config.toml
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] updated file contents /var/opt/gitlab/gitlab-workhorse/config.toml
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] group changed to 998
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] mode changed to 640
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/gitlab-workhorse/config.toml] not queuing delayed action restart on runit_service[gitlab-workhorse] (delayed), as it's already been queued
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx] created directory /var/opt/gitlab/nginx
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf] created directory /var/opt/gitlab/nginx/conf
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/service_conf] created directory /var/opt/gitlab/nginx/conf/service_conf
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/service_conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/service_conf] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/service_conf] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/upstream_definitions] created directory /var/opt/gitlab/nginx/conf/upstream_definitions
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/upstream_definitions] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/upstream_definitions] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/upstream_definitions] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/extra_metrics_conf] created directory /var/opt/gitlab/nginx/conf/extra_metrics_conf
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/extra_metrics_conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/extra_metrics_conf] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/opt/gitlab/nginx/conf/extra_metrics_conf] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/nginx] created directory /var/log/gitlab/nginx
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/nginx] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/nginx] group changed to 999
+[2026-01-01T13:47:37+00:00] INFO: directory[/var/log/gitlab/nginx] mode changed to 750
+[2026-01-01T13:47:37+00:00] INFO: link[/var/opt/gitlab/nginx/logs] created
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf] created file /var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf] updated file contents /var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf] group changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/upstream_definitions/gitlab-workhorse.conf] mode changed to 644
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf] created file /var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf] updated file contents /var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf] group changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-rails.conf] mode changed to 644
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial] created file /var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial] updated file contents /var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial] group changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/service_conf/gitlab-health.partial] mode changed to 644
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf] created file /var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf] updated file contents /var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf] owner changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf] group changed to 0
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/extra_metrics_conf/gitlab-rails.conf] mode changed to 644
+[2026-01-01T13:47:37+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx-status.conf] created file /var/opt/gitlab/nginx/conf/nginx-status.conf
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx-status.conf] updated file contents /var/opt/gitlab/nginx/conf/nginx-status.conf
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx-status.conf] owner changed to 0
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx-status.conf] group changed to 0
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx-status.conf] mode changed to 644
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx.conf] created file /var/opt/gitlab/nginx/conf/nginx.conf
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx.conf] updated file contents /var/opt/gitlab/nginx/conf/nginx.conf
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx.conf] owner changed to 0
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx.conf] group changed to 0
+[2026-01-01T13:47:38+00:00] INFO: template[/var/opt/gitlab/nginx/conf/nginx.conf] mode changed to 644
+[2026-01-01T13:47:38+00:00] INFO: link[/var/log/gitlab/nginx/config] created
+[2026-01-01T13:47:38+00:00] INFO: link[/opt/gitlab/service/nginx] created
+[2026-01-01T13:47:38+00:00] INFO: file[/var/opt/gitlab/nginx/VERSION] created file /var/opt/gitlab/nginx/VERSION
+[2026-01-01T13:47:38+00:00] INFO: file[/var/opt/gitlab/nginx/VERSION] updated file contents /var/opt/gitlab/nginx/VERSION
+[2026-01-01T13:47:39+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start nginx], 19 attempts left
+[2026-01-01T13:47:43+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start nginx] ran successfully
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/bootstrapped] created file /var/opt/gitlab/bootstrapped
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/bootstrapped] updated file contents /var/opt/gitlab/bootstrapped
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/bootstrapped] owner changed to 0
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/bootstrapped] group changed to 0
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/bootstrapped] mode changed to 600
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/opt/gitlab/gitlab-exporter] created directory /var/opt/gitlab/gitlab-exporter
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/opt/gitlab/gitlab-exporter] owner changed to 998
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/opt/gitlab/gitlab-exporter] mode changed to 755
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/log/gitlab/gitlab-exporter] created directory /var/log/gitlab/gitlab-exporter
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/log/gitlab/gitlab-exporter] owner changed to 998
+[2026-01-01T13:47:43+00:00] INFO: directory[/var/log/gitlab/gitlab-exporter] mode changed to 700
+[2026-01-01T13:47:43+00:00] INFO: template[/var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml] created file /var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml
+[2026-01-01T13:47:43+00:00] INFO: template[/var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml] updated file contents /var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml
+[2026-01-01T13:47:43+00:00] INFO: template[/var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml] owner changed to 998
+[2026-01-01T13:47:43+00:00] INFO: template[/var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml] mode changed to 600
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/gitlab-exporter/RUBY_VERSION] created file /var/opt/gitlab/gitlab-exporter/RUBY_VERSION
+[2026-01-01T13:47:43+00:00] INFO: file[/var/opt/gitlab/gitlab-exporter/RUBY_VERSION] updated file contents /var/opt/gitlab/gitlab-exporter/RUBY_VERSION
+[2026-01-01T13:47:43+00:00] INFO: version_file[Create version file for GitLab-Exporter] not queuing delayed action restart on runit_service[gitlab-exporter] (delayed), as it's already been queued
+[2026-01-01T13:47:43+00:00] INFO: link[/var/log/gitlab/gitlab-exporter/config] created
+[2026-01-01T13:47:43+00:00] INFO: link[/opt/gitlab/service/gitlab-exporter] created
+[2026-01-01T13:47:44+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start gitlab-exporter], 19 attempts left
+[2026-01-01T13:47:48+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start gitlab-exporter], 18 attempts left
+[2026-01-01T13:47:51+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start gitlab-exporter] ran successfully
+[2026-01-01T13:47:51+00:00] INFO: directory[/var/log/gitlab/redis-exporter] created directory /var/log/gitlab/redis-exporter
+[2026-01-01T13:47:51+00:00] INFO: directory[/var/log/gitlab/redis-exporter] owner changed to 997
+[2026-01-01T13:47:51+00:00] INFO: directory[/var/log/gitlab/redis-exporter] mode changed to 700
+[2026-01-01T13:47:52+00:00] INFO: link[/var/log/gitlab/redis-exporter/config] created
+[2026-01-01T13:47:52+00:00] INFO: link[/opt/gitlab/service/redis-exporter] created
+[2026-01-01T13:47:53+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start redis-exporter], 19 attempts left
+[2026-01-01T13:47:56+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start redis-exporter] ran successfully
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus] created directory /var/opt/gitlab/prometheus
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus] owner changed to 992
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus] mode changed to 750
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus/rules] created directory /var/opt/gitlab/prometheus/rules
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus/rules] owner changed to 992
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/opt/gitlab/prometheus/rules] mode changed to 750
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/log/gitlab/prometheus] created directory /var/log/gitlab/prometheus
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/log/gitlab/prometheus] owner changed to 992
+[2026-01-01T13:47:56+00:00] INFO: directory[/var/log/gitlab/prometheus] mode changed to 700
+[2026-01-01T13:47:56+00:00] INFO: file[Prometheus config] created file /var/opt/gitlab/prometheus/prometheus.yml
+[2026-01-01T13:47:56+00:00] INFO: file[Prometheus config] updated file contents /var/opt/gitlab/prometheus/prometheus.yml
+[2026-01-01T13:47:56+00:00] INFO: file[Prometheus config] owner changed to 992
+[2026-01-01T13:47:56+00:00] INFO: file[Prometheus config] mode changed to 644
+[2026-01-01T13:47:56+00:00] INFO: link[/var/log/gitlab/prometheus/config] created
+[2026-01-01T13:47:56+00:00] INFO: link[/opt/gitlab/service/prometheus] created
+[2026-01-01T13:47:58+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start prometheus], 19 attempts left
+[2026-01-01T13:48:01+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start prometheus] ran successfully
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/gitlab.rules] created file /var/opt/gitlab/prometheus/rules/gitlab.rules
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/gitlab.rules] updated file contents /var/opt/gitlab/prometheus/rules/gitlab.rules
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/gitlab.rules] owner changed to 992
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/gitlab.rules] mode changed to 644
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/gitlab.rules] not queuing delayed action run on execute[reload prometheus] (delayed), as it's already been queued
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/node.rules] created file /var/opt/gitlab/prometheus/rules/node.rules
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/node.rules] updated file contents /var/opt/gitlab/prometheus/rules/node.rules
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/node.rules] owner changed to 992
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/node.rules] mode changed to 644
+[2026-01-01T13:48:01+00:00] INFO: template[/var/opt/gitlab/prometheus/rules/node.rules] not queuing delayed action run on execute[reload prometheus] (delayed), as it's already been queued
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/opt/gitlab/alertmanager] created directory /var/opt/gitlab/alertmanager
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/opt/gitlab/alertmanager] owner changed to 992
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/opt/gitlab/alertmanager] mode changed to 750
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/log/gitlab/alertmanager] created directory /var/log/gitlab/alertmanager
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/log/gitlab/alertmanager] owner changed to 992
+[2026-01-01T13:48:01+00:00] INFO: directory[/var/log/gitlab/alertmanager] mode changed to 700
+[2026-01-01T13:48:01+00:00] INFO: file[Alertmanager config] created file /var/opt/gitlab/alertmanager/alertmanager.yml
+[2026-01-01T13:48:01+00:00] INFO: file[Alertmanager config] updated file contents /var/opt/gitlab/alertmanager/alertmanager.yml
+[2026-01-01T13:48:01+00:00] INFO: file[Alertmanager config] owner changed to 992
+[2026-01-01T13:48:01+00:00] INFO: file[Alertmanager config] mode changed to 644
+[2026-01-01T13:48:01+00:00] INFO: link[/var/log/gitlab/alertmanager/config] created
+[2026-01-01T13:48:01+00:00] INFO: link[/opt/gitlab/service/alertmanager] created
+[2026-01-01T13:48:03+00:00] INFO: Retrying execution of execute[/opt/gitlab/bin/gitlab-ctl start alertmanager], 19 attempts left
+[2026-01-01T13:48:06+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start alertmanager] ran successfully
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/log/gitlab/postgres-exporter] created directory /var/log/gitlab/postgres-exporter
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/log/gitlab/postgres-exporter] owner changed to 996
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/log/gitlab/postgres-exporter] mode changed to 700
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/opt/gitlab/postgres-exporter] created directory /var/opt/gitlab/postgres-exporter
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/opt/gitlab/postgres-exporter] owner changed to 996
+[2026-01-01T13:48:06+00:00] INFO: directory[/var/opt/gitlab/postgres-exporter] mode changed to 700
+[2026-01-01T13:48:06+00:00] INFO: link[/var/log/gitlab/postgres-exporter/config] created
+[2026-01-01T13:48:06+00:00] INFO: link[/opt/gitlab/service/postgres-exporter] created
+[2026-01-01T13:48:06+00:00] INFO: template[/var/opt/gitlab/postgres-exporter/queries.yaml] created file /var/opt/gitlab/postgres-exporter/queries.yaml
+[2026-01-01T13:48:06+00:00] INFO: template[/var/opt/gitlab/postgres-exporter/queries.yaml] updated file contents /var/opt/gitlab/postgres-exporter/queries.yaml
+[2026-01-01T13:48:06+00:00] INFO: template[/var/opt/gitlab/postgres-exporter/queries.yaml] owner changed to 996
+[2026-01-01T13:48:06+00:00] INFO: template[/var/opt/gitlab/postgres-exporter/queries.yaml] mode changed to 644
+[2026-01-01T13:48:08+00:00] INFO: execute[/opt/gitlab/bin/gitlab-ctl start postgres-exporter] ran successfully
+[2026-01-01T13:48:08+00:00] INFO: directory[/var/opt/gitlab/gitlab-workhorse/sockets] sending restart action to runit_service[gitlab-workhorse] (delayed)
+[2026-01-01T13:48:08+00:00] INFO: version_file[Create version file for NGINX] sending restart action to runit_service[nginx] (delayed)
+[2026-01-01T13:48:09+00:00] INFO: template[/var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml] sending restart action to runit_service[gitlab-exporter] (delayed)
+[2026-01-01T13:48:09+00:00] INFO: file[Prometheus config] sending run action to execute[reload prometheus] (delayed)
+[2026-01-01T13:48:11+00:00] INFO: execute[reload prometheus] ran successfully
+[2026-01-01T13:48:11+00:00] INFO: file[Alertmanager config] sending restart action to runit_service[alertmanager] (delayed)
+[2026-01-01T13:48:11+00:00] INFO: template[/var/opt/gitlab/postgres-exporter/queries.yaml] sending restart action to runit_service[postgres-exporter] (delayed)
+[2026-01-01T13:48:12+00:00] INFO: Cinc Client Run complete in 152.478401747 seconds
+[2026-01-01T13:48:12+00:00] INFO: Running report handlers
+[2026-01-01T13:48:12+00:00] INFO: Report handlers complete

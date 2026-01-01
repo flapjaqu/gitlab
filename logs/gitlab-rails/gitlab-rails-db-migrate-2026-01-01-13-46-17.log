@@ -1,0 +1,6 @@
+Skipping Topology Service health check due to the cell being disabled
+Running db:migrate rake task
+main: == [advisory_lock_connection] object_id: 66320, pg_backend_pid: 569
+main: == [advisory_lock_connection] object_id: 66320, pg_backend_pid: 569
+Running gitlab:clickhouse:migrate:main rake task
+The 'main' ClickHouse database is not configured, skipping migrations
