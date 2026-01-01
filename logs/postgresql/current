@@ -1,35 +1,13 @@
-2026-01-01_13:46:08.05853 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
-2026-01-01_13:46:08.06045 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
-2026-01-01_13:46:08.09413 LOG:  database system was interrupted; last known up at 2026-01-01 13:43:40 GMT
-2026-01-01_13:46:08.26547 LOG:  database system was not properly shut down; automatic recovery in progress
-2026-01-01_13:46:08.36430 LOG:  redo starts at 0/14DF1F8
-2026-01-01_13:46:10.16819 LOG:  invalid record length at 0/A16F5D0: expected at least 24, got 0
-2026-01-01_13:46:10.16820 LOG:  redo done at 0/A16F5A8 system usage: CPU: user: 0.52 s, system: 0.26 s, elapsed: 1.80 s
-2026-01-01_13:46:10.73621 FATAL:  the database system is not accepting connections
-2026-01-01_13:46:10.73623 DETAIL:  Hot standby mode is disabled.
-2026-01-01_13:46:12.75150 LOG:  database system is ready to accept connections
-2026-01-01_13:46:15.76114 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
-2026-01-01_13:46:15.76117 FATAL:  Peer authentication failed for user "gitlab"
-2026-01-01_13:46:15.76117 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
-2026-01-01_13:46:15.98184 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
-2026-01-01_13:46:15.98186 FATAL:  Peer authentication failed for user "gitlab"
-2026-01-01_13:46:15.98186 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
-2026-01-01_13:46:16.04323 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
-2026-01-01_13:46:16.04325 FATAL:  Peer authentication failed for user "gitlab"
-2026-01-01_13:46:16.04325 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
-2026-01-01_13:46:16.80053 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
-2026-01-01_13:46:16.80055 FATAL:  Peer authentication failed for user "gitlab"
-2026-01-01_13:46:16.80055 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
-2026-01-01_15:47:32.82898 LOG:  duration: 1034.347 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
-2026-01-01_15:47:32.84673 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
-2026-01-01_15:47:32.84676 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
-2026-01-01_15:47:32.84676 	       attidentity AS identity,
-2026-01-01_15:47:32.84677 	       attgenerated as attgenerated
-2026-01-01_15:47:32.84677 	  FROM pg_attribute a
-2026-01-01_15:47:32.84677 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
-2026-01-01_15:47:32.84678 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
-2026-01-01_15:47:32.84678 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
-2026-01-01_15:47:32.84679 	 WHERE a.attrelid = '"application_settings"'::regclass
-2026-01-01_15:47:32.84679 	   AND a.attnum > 0 AND NOT a.attisdropped
-2026-01-01_15:47:32.84679 	 ORDER BY a.attnum
-2026-01-01_15:47:32.84680 	
+2026-01-01_16:54:30.35604 LOG:  starting PostgreSQL 16.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-01-01_16:54:30.40373 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2026-01-01_16:54:30.68874 LOG:  database system was interrupted; last known up at 2026-01-01 15:06:14 GMT
+2026-01-01_16:54:31.25314 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-01-01_16:54:31.26339 LOG:  invalid record length at 0/A171D30: expected at least 24, got 0
+2026-01-01_16:54:31.26341 LOG:  redo is not required
+2026-01-01_16:54:31.41201 LOG:  database system is ready to accept connections
+2026-01-01_16:54:47.28952 LOG:  duration: 3162.851 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2026-01-01_16:54:47.28955 	       relname as relname,
+2026-01-01_16:54:47.28956 	       pg_total_relation_size(oid) bytes
+2026-01-01_16:54:47.28956 	  FROM pg_class
+2026-01-01_16:54:47.28956 	 WHERE relkind = 'r';
+2026-01-01_16:54:47.28957 	
