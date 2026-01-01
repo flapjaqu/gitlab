@@ -1478,3 +1478,465 @@
 2026-01-01_14:29:08.63065 {"timestamp":"2026-01-01T14:29:08.628Z","pid":2640,"message":"*      Workers: 8"}
 2026-01-01_14:29:08.63065 {"timestamp":"2026-01-01T14:29:08.628Z","pid":2640,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
 2026-01-01_14:29:08.63065 {"timestamp":"2026-01-01T14:29:08.628Z","pid":2640,"message":"* Preloading application"}
+2026-01-01_14:30:25.87893 {"timestamp":"2026-01-01T14:30:25.878Z","pid":2640,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:30:25.87934 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:30:25.88265 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:30:25.88269 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:30:25.88269 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:30:25.88269 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:30:25.88270 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:30:25.88270 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:30:25.88270 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:30:25.88271 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:30:25.88271 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:30:25.88272 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:30:25.88273 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:30:25.88274 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:30:25.88274 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:30:25.88274 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:30:25.88275 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:30:25.88275 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:30:25.88275 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:30:25.88276 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:30:25.88276 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:30:25.88276 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:30:25.88278 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:30:25.88279 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:30:25.88280 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:30:25.88280 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:30:25.88280 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:30:25.88281 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:30:25.88281 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:30:25.88281 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:30:25.88281 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:30:25.88282 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:30:30.20131 {"timestamp":"2026-01-01T14:30:30.174Z","pid":2689,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:30:30.20136 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:30:30.20136 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:30:30.20137 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*  Min threads: 4"}
+2026-01-01_14:30:30.20137 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*  Max threads: 4"}
+2026-01-01_14:30:30.20137 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*  Environment: production"}
+2026-01-01_14:30:30.20138 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*   Master PID: 2689"}
+2026-01-01_14:30:30.20138 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*      Workers: 8"}
+2026-01-01_14:30:30.20138 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:30:30.20139 {"timestamp":"2026-01-01T14:30:30.200Z","pid":2689,"message":"* Preloading application"}
+2026-01-01_14:31:45.34181 {"timestamp":"2026-01-01T14:31:45.341Z","pid":2689,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:31:45.34228 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:31:45.34323 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:31:45.34325 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:31:45.34325 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:31:45.34326 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:31:45.34326 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:31:45.34327 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:31:45.34327 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:31:45.34327 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:31:45.34328 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:31:45.34328 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:31:45.34331 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:31:45.34331 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:31:45.34331 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:31:45.34332 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:31:45.34332 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:31:45.34332 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:31:45.34332 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:31:45.34333 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:31:45.34333 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:31:45.34333 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:31:45.34334 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:31:45.34335 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:31:45.34336 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:31:45.34336 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:31:45.34336 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:31:45.34336 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:31:45.34337 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:31:45.34337 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:31:45.34337 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:31:45.34337 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:31:48.97172 {"timestamp":"2026-01-01T14:31:48.955Z","pid":2747,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:31:48.97181 {"timestamp":"2026-01-01T14:31:48.971Z","pid":2747,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:31:48.97186 {"timestamp":"2026-01-01T14:31:48.971Z","pid":2747,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:31:48.97191 {"timestamp":"2026-01-01T14:31:48.971Z","pid":2747,"message":"*  Min threads: 4"}
+2026-01-01_14:31:48.97195 {"timestamp":"2026-01-01T14:31:48.971Z","pid":2747,"message":"*  Max threads: 4"}
+2026-01-01_14:31:48.97464 {"timestamp":"2026-01-01T14:31:48.971Z","pid":2747,"message":"*  Environment: production"}
+2026-01-01_14:31:48.97472 {"timestamp":"2026-01-01T14:31:48.972Z","pid":2747,"message":"*   Master PID: 2747"}
+2026-01-01_14:31:48.97473 {"timestamp":"2026-01-01T14:31:48.972Z","pid":2747,"message":"*      Workers: 8"}
+2026-01-01_14:31:48.97473 {"timestamp":"2026-01-01T14:31:48.972Z","pid":2747,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:31:48.97474 {"timestamp":"2026-01-01T14:31:48.972Z","pid":2747,"message":"* Preloading application"}
+2026-01-01_14:33:04.56790 {"timestamp":"2026-01-01T14:33:04.567Z","pid":2747,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:33:04.56816 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:33:04.56868 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:33:04.56868 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:33:04.56870 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:33:04.56870 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:33:04.56870 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:33:04.56871 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:33:04.56871 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:33:04.56871 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:33:04.56872 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:33:04.56872 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:33:04.56874 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:33:04.56874 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:33:04.56874 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:33:04.56875 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:33:04.56875 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:33:04.56875 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:33:04.56876 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:33:04.56876 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:33:04.56876 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:33:04.56877 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:33:04.56877 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:33:04.56879 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:33:04.56879 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:33:04.56879 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:33:04.56880 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:33:04.56880 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:33:04.56880 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:33:04.56881 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:33:04.56881 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:33:04.56881 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:33:07.99544 {"timestamp":"2026-01-01T14:33:07.981Z","pid":2800,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:33:07.99547 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:33:07.99548 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:33:07.99553 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*  Min threads: 4"}
+2026-01-01_14:33:07.99559 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*  Max threads: 4"}
+2026-01-01_14:33:07.99564 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*  Environment: production"}
+2026-01-01_14:33:07.99568 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*   Master PID: 2800"}
+2026-01-01_14:33:07.99572 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*      Workers: 8"}
+2026-01-01_14:33:07.99577 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:33:07.99582 {"timestamp":"2026-01-01T14:33:07.995Z","pid":2800,"message":"* Preloading application"}
+2026-01-01_14:34:08.84449 {"timestamp":"2026-01-01T14:34:08.844Z","pid":2800,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:34:08.84481 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:34:08.84553 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:34:08.84554 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:34:08.84554 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:34:08.84555 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:34:08.84555 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:34:08.84555 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:34:08.84556 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:34:08.84556 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:34:08.84556 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:34:08.84557 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:34:08.84558 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:34:08.84559 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:34:08.84559 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:34:08.84560 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:34:08.84560 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:34:08.84560 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:34:08.84561 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:34:08.84561 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:34:08.84561 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:34:08.84562 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:34:08.84562 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:34:08.84564 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:34:08.84564 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:34:08.84564 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:34:08.84565 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:34:08.84566 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:34:08.84566 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:34:08.84568 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:34:08.84568 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:34:08.84569 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:34:12.17650 {"timestamp":"2026-01-01T14:34:12.158Z","pid":2845,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:34:12.17662 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:34:12.17864 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:34:12.17868 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*  Min threads: 4"}
+2026-01-01_14:34:12.17869 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*  Max threads: 4"}
+2026-01-01_14:34:12.17870 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*  Environment: production"}
+2026-01-01_14:34:12.17870 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*   Master PID: 2845"}
+2026-01-01_14:34:12.17870 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*      Workers: 8"}
+2026-01-01_14:34:12.17871 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:34:12.17871 {"timestamp":"2026-01-01T14:34:12.176Z","pid":2845,"message":"* Preloading application"}
+2026-01-01_14:35:15.25297 {"timestamp":"2026-01-01T14:35:15.252Z","pid":2845,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:35:15.25316 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:35:15.25377 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:35:15.25377 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:35:15.25378 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:35:15.25378 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:35:15.25378 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:35:15.25378 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:35:15.25379 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:35:15.25379 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:35:15.25379 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:35:15.25379 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:35:15.25381 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:35:15.25381 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:35:15.25381 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:35:15.25382 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:35:15.25382 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:35:15.25382 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:35:15.25383 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:35:15.25383 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:35:15.25383 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:35:15.25385 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:35:15.25385 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:35:15.25387 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:35:15.25387 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:35:15.25387 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:35:15.25388 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:35:15.25388 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:35:15.25388 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:35:15.25389 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:35:15.25389 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:35:15.25389 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:35:18.10641 {"timestamp":"2026-01-01T14:35:18.090Z","pid":2890,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:35:18.10645 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:35:18.10648 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:35:18.10652 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*  Min threads: 4"}
+2026-01-01_14:35:18.10656 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*  Max threads: 4"}
+2026-01-01_14:35:18.10660 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*  Environment: production"}
+2026-01-01_14:35:18.10666 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*   Master PID: 2890"}
+2026-01-01_14:35:18.10670 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*      Workers: 8"}
+2026-01-01_14:35:18.10674 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:35:18.10678 {"timestamp":"2026-01-01T14:35:18.106Z","pid":2890,"message":"* Preloading application"}
+2026-01-01_14:36:39.57229 {"timestamp":"2026-01-01T14:36:39.570Z","pid":2890,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:36:39.57232 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:36:39.57247 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:36:39.57248 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:36:39.57248 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:36:39.57248 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:36:39.57249 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:36:39.57249 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:36:39.57249 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:36:39.57250 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:36:39.57250 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:36:39.57251 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:36:39.57252 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:36:39.57253 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:36:39.57253 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:36:39.57253 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:36:39.57253 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:36:39.57253 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:36:39.57254 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:36:39.57254 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:36:39.57254 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:36:39.57254 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:36:39.57254 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:36:39.57256 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:36:39.57256 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:36:39.57256 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:36:39.57256 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:36:39.57256 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:36:39.57257 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:36:39.57257 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:36:39.57257 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:36:39.57257 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:36:43.17378 {"timestamp":"2026-01-01T14:36:43.152Z","pid":2948,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:36:43.17384 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:36:43.17385 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:36:43.17385 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*  Min threads: 4"}
+2026-01-01_14:36:43.17386 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*  Max threads: 4"}
+2026-01-01_14:36:43.17386 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*  Environment: production"}
+2026-01-01_14:36:43.17386 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*   Master PID: 2948"}
+2026-01-01_14:36:43.17386 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*      Workers: 8"}
+2026-01-01_14:36:43.17387 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:36:43.17387 {"timestamp":"2026-01-01T14:36:43.171Z","pid":2948,"message":"* Preloading application"}
+2026-01-01_14:38:04.39013 {"timestamp":"2026-01-01T14:38:04.390Z","pid":2948,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:38:04.39037 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:38:04.39121 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:38:04.39123 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:38:04.39123 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:38:04.39124 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:38:04.39124 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:38:04.39124 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:38:04.39124 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:38:04.39125 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:38:04.39125 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:38:04.39125 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:38:04.39127 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:38:04.39127 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:38:04.39127 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:38:04.39128 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:38:04.39128 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:38:04.39128 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:38:04.39128 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:38:04.39129 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:38:04.39129 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:38:04.39129 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:38:04.39130 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:38:04.39131 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:38:04.39131 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:38:04.39132 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:38:04.39132 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:38:04.39132 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:38:04.39132 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:38:04.39133 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:38:04.39133 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:38:04.39133 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:38:08.31797 {"timestamp":"2026-01-01T14:38:08.294Z","pid":2998,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:38:08.31801 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:38:08.31801 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:38:08.31802 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*  Min threads: 4"}
+2026-01-01_14:38:08.31803 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*  Max threads: 4"}
+2026-01-01_14:38:08.31804 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*  Environment: production"}
+2026-01-01_14:38:08.31804 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*   Master PID: 2998"}
+2026-01-01_14:38:08.31804 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*      Workers: 8"}
+2026-01-01_14:38:08.31805 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:38:08.31805 {"timestamp":"2026-01-01T14:38:08.316Z","pid":2998,"message":"* Preloading application"}
+2026-01-01_14:39:28.88019 {"timestamp":"2026-01-01T14:39:28.879Z","pid":2998,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:39:28.88022 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:39:28.88026 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:39:28.88027 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:39:28.88028 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:39:28.88028 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:39:28.88028 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:39:28.88029 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:39:28.88029 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:39:28.88029 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:39:28.88030 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:39:28.88030 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:39:28.88032 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:39:28.88032 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:39:28.88032 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:39:28.88033 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:39:28.88033 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:39:28.88033 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:39:28.88034 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:39:28.88034 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:39:28.88034 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:39:28.88035 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:39:28.88035 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:39:28.88037 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:39:28.88037 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:39:28.88038 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:39:28.88038 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:39:28.88038 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:39:28.88040 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:39:28.88040 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:39:28.88040 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:39:28.88041 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:39:32.50779 {"timestamp":"2026-01-01T14:39:32.489Z","pid":3049,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:39:32.51064 {"timestamp":"2026-01-01T14:39:32.507Z","pid":3049,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:39:32.51066 {"timestamp":"2026-01-01T14:39:32.507Z","pid":3049,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:39:32.51067 {"timestamp":"2026-01-01T14:39:32.507Z","pid":3049,"message":"*  Min threads: 4"}
+2026-01-01_14:39:32.51067 {"timestamp":"2026-01-01T14:39:32.507Z","pid":3049,"message":"*  Max threads: 4"}
+2026-01-01_14:39:32.51067 {"timestamp":"2026-01-01T14:39:32.508Z","pid":3049,"message":"*  Environment: production"}
+2026-01-01_14:39:32.51068 {"timestamp":"2026-01-01T14:39:32.508Z","pid":3049,"message":"*   Master PID: 3049"}
+2026-01-01_14:39:32.51068 {"timestamp":"2026-01-01T14:39:32.508Z","pid":3049,"message":"*      Workers: 8"}
+2026-01-01_14:39:32.51068 {"timestamp":"2026-01-01T14:39:32.508Z","pid":3049,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:39:32.51068 {"timestamp":"2026-01-01T14:39:32.508Z","pid":3049,"message":"* Preloading application"}
+2026-01-01_14:41:15.14140 {"timestamp":"2026-01-01T14:41:15.140Z","pid":3049,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:41:15.14145 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:41:15.14188 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:41:15.14189 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:41:15.14190 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:41:15.14190 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:41:15.14190 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:41:15.14191 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:41:15.14191 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:41:15.14191 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:41:15.14192 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:41:15.14192 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:41:15.14194 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:41:15.14194 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:41:15.14194 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:41:15.14195 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:41:15.14195 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:41:15.14195 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:41:15.14196 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:41:15.14197 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:41:15.14197 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:41:15.14198 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:41:15.14198 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:41:15.14200 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:41:15.14200 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:41:15.14200 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:41:15.14200 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:41:15.14201 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:41:15.14201 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:41:15.14201 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:41:15.14202 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:41:15.14202 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:41:19.84932 {"timestamp":"2026-01-01T14:41:19.823Z","pid":3114,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:41:19.84952 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:41:19.84960 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:41:19.84966 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*  Min threads: 4"}
+2026-01-01_14:41:19.84972 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*  Max threads: 4"}
+2026-01-01_14:41:19.84980 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*  Environment: production"}
+2026-01-01_14:41:19.84987 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*   Master PID: 3114"}
+2026-01-01_14:41:19.84993 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*      Workers: 8"}
+2026-01-01_14:41:19.85002 {"timestamp":"2026-01-01T14:41:19.849Z","pid":3114,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:41:19.85007 {"timestamp":"2026-01-01T14:41:19.850Z","pid":3114,"message":"* Preloading application"}
+2026-01-01_14:42:58.73281 {"timestamp":"2026-01-01T14:42:58.732Z","pid":3114,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:42:58.73319 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:42:58.73438 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:42:58.73443 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:42:58.73444 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:42:58.73444 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:42:58.73445 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:42:58.73445 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:42:58.73445 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:42:58.73446 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:42:58.73447 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:42:58.73448 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:42:58.73450 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:42:58.73450 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:42:58.73450 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:42:58.73450 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:42:58.73451 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:42:58.73451 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:42:58.73451 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:42:58.73452 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:42:58.73452 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:42:58.73452 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:42:58.73452 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:42:58.73454 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:42:58.73455 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:42:58.73455 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:42:58.73455 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:42:58.73455 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:42:58.73456 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:42:58.73456 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:42:58.73457 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:42:58.73457 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:43:02.86008 {"timestamp":"2026-01-01T14:43:02.841Z","pid":3177,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:43:02.86016 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:43:02.86020 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:43:02.86025 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*  Min threads: 4"}
+2026-01-01_14:43:02.86029 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*  Max threads: 4"}
+2026-01-01_14:43:02.86033 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*  Environment: production"}
+2026-01-01_14:43:02.86037 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*   Master PID: 3177"}
+2026-01-01_14:43:02.86041 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*      Workers: 8"}
+2026-01-01_14:43:02.86046 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:43:02.86050 {"timestamp":"2026-01-01T14:43:02.860Z","pid":3177,"message":"* Preloading application"}
+2026-01-01_14:44:26.90724 {"timestamp":"2026-01-01T14:44:26.906Z","pid":3177,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2026-01-01_14:44:26.90727 bundler: failed to load command: puma (/opt/gitlab/embedded/bin/puma)
+2026-01-01_14:44:26.90738 /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 8080 (Errno::EADDRINUSE)
+2026-01-01_14:44:26.90739 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `new'
+2026-01-01_14:44:26.90739 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:344:in `add_tcp_listener'
+2026-01-01_14:44:26.90740 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:173:in `block in parse'
+2026-01-01_14:44:26.90740 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `each'
+2026-01-01_14:44:26.90740 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/binder.rb:156:in `parse'
+2026-01-01_14:44:26.90741 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/runner.rb:166:in `load_and_bind'
+2026-01-01_14:44:26.90741 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cluster.rb:381:in `run'
+2026-01-01_14:44:26.90741 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/launcher.rb:207:in `run'
+2026-01-01_14:44:26.90742 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/lib/puma/cli.rb:73:in `run'
+2026-01-01_14:44:26.90743 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/puma-7.1.0/bin/puma:10:in `<top (required)>'
+2026-01-01_14:44:26.90744 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:44:26.90744 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:44:26.90744 	from /opt/gitlab/embedded/bin/puma:25:in `<top (required)>'
+2026-01-01_14:44:26.90745 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `load'
+2026-01-01_14:44:26.90745 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:59:in `kernel_load'
+2026-01-01_14:44:26.90745 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+2026-01-01_14:44:26.90745 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:451:in `exec'
+2026-01-01_14:44:26.90746 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+2026-01-01_14:44:26.90746 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+2026-01-01_14:44:26.90746 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+2026-01-01_14:44:26.90749 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:35:in `dispatch'
+2026-01-01_14:44:26.90749 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+2026-01-01_14:44:26.90750 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:29:in `start'
+2026-01-01_14:44:26.90750 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+2026-01-01_14:44:26.90750 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+2026-01-01_14:44:26.90751 	from /opt/gitlab/embedded/lib/ruby/gems/3.2.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+2026-01-01_14:44:26.90751 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `load'
+2026-01-01_14:44:26.90751 	from /opt/gitlab/embedded/lib/ruby/site_ruby/3.2.0/rubygems.rb:319:in `activate_and_load_bin_path'
+2026-01-01_14:44:26.90752 	from /opt/gitlab/embedded/bin/bundle:25:in `<main>'
+2026-01-01_14:44:30.40746 {"timestamp":"2026-01-01T14:44:30.393Z","pid":3229,"message":"Puma starting in cluster mode..."}
+2026-01-01_14:44:30.40749 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"* Puma version: 7.1.0 (\"Neon Witch\")"}
+2026-01-01_14:44:30.40750 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"* Ruby version: ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [x86_64-linux]"}
+2026-01-01_14:44:30.40752 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*  Min threads: 4"}
+2026-01-01_14:44:30.40754 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*  Max threads: 4"}
+2026-01-01_14:44:30.40755 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*  Environment: production"}
+2026-01-01_14:44:30.40757 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*   Master PID: 3229"}
+2026-01-01_14:44:30.40761 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*      Workers: 8"}
+2026-01-01_14:44:30.40767 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"*     Restarts: (✔) hot (✖) phased (✖) refork"}
+2026-01-01_14:44:30.40767 {"timestamp":"2026-01-01T14:44:30.407Z","pid":3229,"message":"* Preloading application"}
